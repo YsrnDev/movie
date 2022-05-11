@@ -19,10 +19,10 @@ const Content = () => {
       <h1 className="text-4xl font-semibold my-10 text-center text-white" id="Trending">
         Trending Movie
       </h1>
-      <div className="flex flex-wrap gap-10 justify-evenly p-10 rounded-xl bg-slate-300 bg-opacity-20 shadow-xl">
+      <div className="md:flex md:flex-wrap md:gap-10 md:justify-evenly p-10 rounded-xl bg-slate-300 bg-opacity-20 shadow-xl">
         {movies.map((result, index) => {
           return (
-            <div className="w-1/4 border h-[500px] rounded-xl overflow-hidden text-center shadow-xl" key={index}>
+            <div className="w-full md:w-1/4 border h-[500px] rounded-xl overflow-hidden text-center shadow-xl mb-10 md:mb-0" key={index}>
               <img src={`${process.env.REACT_APP_IMG_URL}/${result.poster_path}`} alt="test" className="h-[73%] w-full" />
               <div className="px-4">
                 <button href="#" className="text-lg font-bold pt-2">
